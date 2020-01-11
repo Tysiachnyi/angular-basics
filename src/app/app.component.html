@@ -16,6 +16,11 @@
 
 
 
+<button (click)="seeVar = !seeVar">Click and hide bot p & unhide</button>
+<p [ngStyle]="{'display': seeVar ? 'none' : 'block'}">See me?</p>
+
+
+
 
 
 

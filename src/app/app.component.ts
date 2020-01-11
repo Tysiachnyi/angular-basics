@@ -21,6 +21,7 @@ export class AppComponent {
     
   }
   backgroundToogle:boolean = false;
+  seeVar:boolean = false;
 
   // onInput(event:any){
   // this.title = event.target.value;
