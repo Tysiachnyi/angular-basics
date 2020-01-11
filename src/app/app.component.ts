@@ -21,23 +21,25 @@ export class AppComponent {
     
   }
 
-arr =  [1,1,2,3,5,8,13]
+// arr =  [1,1,2,3,5,8,13]
 
-objs = [
-  {title: 'Post1', author: 'Vladilen', comments:[
-    {name: 'Max', text:'lorem 1'},
-    {name: 'Max', text:'lorem 2'},
-    {name: 'Max', text:'lorem 3'}
+// objs = [
+//   {title: 'Post1', author: 'Vladilen', comments:[
+//     {name: 'Max', text:'lorem 1'},
+//     {name: 'Max', text:'lorem 2'},
+//     {name: 'Max', text:'lorem 3'}
 
-  ]},
-  {title: 'Post2', author: 'Vladilen 2', comments:[
-    {name: 'Max 2', text:'lorem 1'},
-    {name: 'Max 2', text:'lorem 2'},
-    {name: 'Max 2', text:'lorem 3'}
+//   ]},
+//   {title: 'Post2', author: 'Vladilen 2', comments:[
+//     {name: 'Max 2', text:'lorem 1'},
+//     {name: 'Max 2', text:'lorem 2'},
+//     {name: 'Max 2', text:'lorem 3'}
 
-  ]}
+//   ]}
 
-]
+// ]
+
+currentDate = new Date()
 
   //  toogle:boolean = false; 
   // seeVar:boolean = false; ngStyle
