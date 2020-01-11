@@ -2,15 +2,37 @@
 <p>{{helloText}}</p> -->
 <h1>Hello Angular World</h1>
 
+<button (click)="backgroundToogle = !backgroundToogle">Toogle</button>
+
+<div [ngStyle]="{
+    width: '200px',
+    height: '200px',
+    borderRadius: '5px',
+    border:'1px solid grey',
+    background: backgroundToogle ? 'red' : 'blue'
+}">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 <input type="text" [(ngModel)]='title'>
 
-<p>{{title}}</p>
-
-
-
-
-
-
+<p>{{title}}</p> -->
 
 <!-- 
 <button (click)="onClick()">click me</button>
@@ -21,7 +43,6 @@
 >
 <p><strong>{{inputValue}}</strong></p>
 
-
 <input type="text"
 (keyup.enter)="onEnterClickString(myValue.value)"
 #myValue
@@ -31,11 +52,10 @@
 <!-- <p>{{title}}</p>
 <p>{{number}}</p> -->
 
-
 <hr>
 <app-post></app-post>
 <!-- <app-post></app-post> -->
 
 <hr>
 
-<app-post4></app-post4> -->
+<app-post4></app-post4> 

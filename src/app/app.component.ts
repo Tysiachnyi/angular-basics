@@ -13,17 +13,18 @@ export class AppComponent {
   // helloText = 'Hello friend :)';
   // inputValue = ' ';
   // inputField = 'Yo';
-  title = ' '
+  // title = ' '
 
 
 
   constructor(){
     
   }
+  backgroundToogle:boolean = false;
 
-  onInput(event:any){
-  this.title = event.target.value;
-  }
+  // onInput(event:any){
+  // this.title = event.target.value;
+  // }
 
   // onInput(event:KeyboardEvent){
   //   console.log('Event', event)
