@@ -15,15 +15,21 @@
 
 
     <button (click)="toogle = !toogle">Toogle</button>
+    
+    <div [ngSwitch]="toogle">
+        <p *ngSwitchCase="true" class="red">some</p>
+        <p *ngSwitchCase="false" class="blue">2 simple</p>
+        <p *ngSwitchDefault>loremeed</p>
+    </div>
 
 
-    <p  *ngIf="toogle; else blueP" class="red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, impedit?</p>
+    <!-- <p  *ngIf="toogle; else blueP" class="red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, impedit?</p>
         
     <ng-template #blueP>
 
     <p class="blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nulla?</p>
 
-    </ng-template>
+    </ng-template> -->
     
 
 <!-- 
@@ -36,7 +42,7 @@
     background: backgroundToogle ? 'red' : 'blue'
 }">
 
-</div> -->
+</divn> -->
 
 
 <!-- ngStyle
