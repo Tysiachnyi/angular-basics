@@ -20,8 +20,8 @@ export class AppComponent {
   constructor(){
     
   }
-  backgroundToogle:boolean = false;
-  seeVar:boolean = false;
+   backgroundToogle:boolean = false; 
+  // seeVar:boolean = false; ngStyle
 
   // onInput(event:any){
   // this.title = event.target.value;

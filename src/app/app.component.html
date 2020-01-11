@@ -1,9 +1,33 @@
 <!-- <input [placeholder]="helloText"> 
 <p>{{helloText}}</p> -->
-<h1>Hello Angular World</h1>
+<!-- <h1>Hello Angular World</h1> -->
 
-<button (click)="backgroundToogle = !backgroundToogle">Toogle</button>
 
+<!-- <p [ngClass]="{
+    red: backgroundToogle,
+    blue: !backgroundToogle
+    }">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, obcaecati.</p> -->
+
+    <!-- <p 
+    [class.blue]="!backgroundToogle"
+    [class.red]="backgroundToogle"
+    >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, dicta?</p> -->
+
+
+    <button (click)="toogle = !toogle">Toogle</button>
+
+
+    <p  *ngIf="toogle; else blueP" class="red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, impedit?</p>
+        
+    <ng-template #blueP>
+
+    <p class="blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nulla?</p>
+
+    </ng-template>
+    
+
+<!-- 
+     ngStyle
 <div [ngStyle]="{
     width: '200px',
     height: '200px',
@@ -12,12 +36,12 @@
     background: backgroundToogle ? 'red' : 'blue'
 }">
 
-</div>
+</div> -->
 
 
-
+<!-- ngStyle
 <button (click)="seeVar = !seeVar">Click and hide bot p & unhide</button>
-<p [ngStyle]="{'display': seeVar ? 'none' : 'block'}">See me?</p>
+<p [ngStyle]="{'display': seeVar ? 'none' : 'block'}">See me?</p>   -->
 
 
 
