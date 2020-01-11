@@ -1,5 +1,27 @@
+<input [placeholder]="helloText"> 
+<p>{{helloText}}</p>
 <h1>Hello Angular World</h1>
 
+<button (click)="onClick()">click me</button>
+<input type="text" 
+(keyup.enter)="onInput($event)" 
+(blur)="onBlur(myInput.value)"
+#myInput 
+>
+<p><strong>{{inputValue}}</strong></p>
+
+
+<input type="text"
+(keyup.enter)="onEnterClickString(myValue.value)"
+#myValue
+>
+<p>{{inputField}}</p>
+
+<!-- <p>{{title}}</p>
+<p>{{number}}</p> -->
+
+
+<hr>
 <app-post></app-post>
 <!-- <app-post></app-post> -->
 
