@@ -6,13 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Dynamic title';
-  number = 42;
-  arr= [1,2,3];
-  obj = {a:1, b:2};
-  helloText = 'Hello friend :)';
-  inputValue = '';
-  inputField = 'Yo';
+  // title = 'Dynamic title';
+  // number = 42;
+  // arr= [1,2,3];
+  // obj = {a:1, b:2};
+  // helloText = 'Hello friend :)';
+  // inputValue = ' ';
+  // inputField = 'Yo';
+  title = ' '
 
 
 
@@ -20,26 +21,30 @@ export class AppComponent {
     
   }
 
-  onInput(event:KeyboardEvent){
-    console.log('Event', event)
-    this.inputValue = (<HTMLInputElement>event.target).value;
+  onInput(event:any){
+  this.title = event.target.value;
   }
 
-  onEnterClick(event:KeyboardEvent){
-    this.inputField = (<HTMLInputElement>event.target).value;
-  }
+  // onInput(event:KeyboardEvent){
+  //   console.log('Event', event)
+  //   this.inputValue = (<HTMLInputElement>event.target).value;
+  // }
 
-  onEnterClickString(str:string){
-    this.inputField = str;
-  }
+  // onEnterClick(event:KeyboardEvent){
+  //   this.inputField = (<HTMLInputElement>event.target).value;
+  // }
 
-  onBlur(str:string){
-  this.inputValue = str;
-  }
+  // onEnterClickString(str:string){
+  //   this.inputField = str;
+  // }
 
-  onClick(){
-    console.log('click')
-  }
+  // onBlur(str:string){
+  // this.inputValue = str;
+  // }
+
+  // onClick(){
+  //   console.log('click')
+  // }
 
   
 }
